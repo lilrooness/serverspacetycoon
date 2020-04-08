@@ -1,6 +1,6 @@
 # SpageagentServer
 
-**Server for Space Tycoon**
+**Server for [Space Tycoon](https://lilrooness.itch.io/space-tycoon)**
 
 ## First Time Setup
 
