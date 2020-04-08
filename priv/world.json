@@ -1,0 +1,149 @@
+{
+  "data": {
+    "upgrades": {
+      "1": {
+        "price": 500,
+        "name": "shortrange mineral scanning",
+        "enabled": false
+      },
+      "2": {
+        "price": 3000,
+        "name": "interstellar warp drive",
+        "enabled": false
+      }
+    },
+    "stations": {
+      "1": {
+        "system_id": "1",
+        "name": "flabbynabby",
+        "pos": { "y": 800, "x": 900 }
+      },
+      "2": {
+        "system_id": "2",
+        "name": "boopong",
+        "pos": { "y": 800, "x": 900 }
+      }
+    },
+    "player": {
+      "x": 496,
+      "spacebucks": 500,
+      "id": "1",
+      "orbit_object_type": "asteroids",
+      "jobs": {},
+      "y": 306,
+      "orbit_object_id": "1"
+    },
+    "jobs": {
+      "1": {
+        "requirements": [
+          {
+            "type": "own_asteroid",
+            "system_id": "1",
+            "minerals": { "platinum": 0, "rhodium": 0, "gold": 0, "rock": 0 },
+            "min_size": 30
+          }
+        ],
+        "status": 1,
+        "title": "Looking for homely space rock",
+        "available": true,
+        "station_id": "1",
+        "ending": "Thank you so much! With any luck, our children will be able to absorb all the radiation they need to grow up strong and healthy. I cant thank you enough, but here's your fee.",
+        "intro": "My wife and I need to move out of this station to a rock of our own, but we're far to busy with work and looking after the kids!!! Please! Find us a rock we see the stars from!",
+        "reward": { "spacebucks": 3000 }
+      },
+      "2": {
+        "requirements": [
+          {
+            "type": "own_asteroid",
+            "system_id": "1",
+            "minerals": { "platinum": 0, "rhodium": 0, "gold": 0.4, "rock": 0 },
+            "min_size": 30
+          }
+        ],
+        "status": 1,
+        "title": "Finding that special mineral glow",
+        "available": true,
+        "station_id": "1",
+        "ending": "The glow! OH THE GLOW!",
+        "intro": "Looking to find somewhere that's going to standout in the starlight . . . it's going to need just the right amount of shiny metals.",
+        "reward": { "spacebucks": 2000 }
+      },
+      "3": {
+        "requirements": [
+          {
+            "type": "own_asteroid",
+            "system_id": "2",
+            "minerals": { "platinum": 0, "rhodium": 0.2, "gold": 0, "rock": 0 },
+            "min_size": 30
+          }
+        ],
+        "status": 1,
+        "title": "The spacegoo is greener!",
+        "available": true,
+        "station_id": "1",
+        "ending": "Ahhh! Fresh star fresh life! So long, YA BUMS!!",
+        "intro": "This system used to be great. But now its just full of bumms who want bucks for nothing! I'm tired of living here, I hear gloopydoopy is open to new residents, and they're giving away free stims to all new arrivals!\n OH! and there'd better be some Rhodium",
+        "reward": { "spacebucks": 2000 }
+      }
+    },
+    "systems": {
+      "1": { "name": "pooplegloob", "pos": { "y": 50, "x": 50 } },
+      "2": { "name": "gloopydoopy", "pos": { "y": 450, "x": 400 } }
+    },
+    "current_system": "1",
+    "asteroids": {
+      "1": {
+        "price": 300,
+        "system_id": "1",
+        "size": 50,
+        "pos": { "y": 50, "x": 50 },
+        "scanned": false,
+        "minerals": { "platinum": 0.1, "rhodium": 0, "rock": 0.7, "gold": 0.2 },
+        "for_sale": true,
+        "name": "GlibGlob20"
+      },
+      "2": {
+        "price": 800,
+        "size": 60,
+        "system_id": "1",
+        "pos": { "y": 2000, "x": 2000 },
+        "minerals": { "platinum": 0, "rhodium": 0, "rock": 0.5, "gold": 0.5 },
+        "name": "BoopleSnoot3",
+        "for_sale": true
+      },
+      "3": {
+        "price": 2000,
+        "size": 70,
+        "system_id": "1",
+        "pos": { "y": 2000, "x": 5000 },
+        "minerals": { "platinum": 0, "rhodium": 0, "rock": 0.4, "gold": 0.6 },
+        "name": "BoopleSnoot4",
+        "for_sale": true
+      },
+      "4": {
+        "price": 600,
+        "size": 70,
+        "system_id": "2",
+        "pos": { "y": 560, "x": 2965 },
+        "minerals": { "platinum": 0, "rhodium": 0, "rock": 1, "gold": 0 },
+        "name": "HoogleDoogle",
+        "for_sale": true
+      },
+      "5": {
+        "price": 600,
+        "size": 60,
+        "system_id": "2",
+        "pos": { "y": 2450, "x": 2000 },
+        "minerals": {
+          "platinum": 0.05,
+          "rhodium": 0.4,
+          "rock": 0.5,
+          "gold": 0.05
+        },
+        "name": "FlarpleBartSnartIV",
+        "for_sale": true
+      }
+    },
+    "listings": {}
+  }
+}
