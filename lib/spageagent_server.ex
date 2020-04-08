@@ -4,7 +4,7 @@ defmodule SpageagentServer do
   """
   use Application
 
-  def start(_type, _args) do
+  def start() do
     children = [
       Plug.Cowboy.child_spec(scheme: :http, plug: SpaceagentServer.Router),
       %{
