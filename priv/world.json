@@ -24,7 +24,21 @@
         "pos": { "y": 800, "x": 900 }
       }
     },
+    "players": {
+      "2": {
+        "username": "pooface",
+        "x": 496,
+        "spacebucks": 500,
+        "id": "1",
+        "orbit_object_type": "stations",
+        "jobs": {},
+        "y": 306,
+        "orbit_object_id": "1"
+      }
+    },
     "player": {
+      "current_system": "1",
+      "username": "lilroo",
       "x": 496,
       "spacebucks": 500,
       "id": "1",
