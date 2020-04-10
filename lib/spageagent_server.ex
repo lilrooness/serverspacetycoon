@@ -5,8 +5,12 @@ defmodule SpageagentServer do
   use Application
 
   def start() do
+    start([], [])
+  end
+
+  def start(_, _) do
     children = [
-      Plug.Cowboy.child_spec(scheme: :http, plug: SpaceagentServer.Router),
+      Plug.Cowboy.child_spec(scheme: :http, plug: SpaceagentServer.Router, dispatch: dispatch()),
       %{
         id: :world,
         start: {SpaceagentServer.World, :start_link, []}
@@ -17,13 +21,13 @@ defmodule SpageagentServer do
     Supervisor.start_link(children, opts)
   end
 
-  # defp dispatch do
-  #   [
-  #     {:_,
-  #      [
-  #        #  {"/ws", MyApp.SocketHandler, []},
-  #        {:_, Plug.Adapters.Cowboy.Handler, {SpaceagentServer.Router, []}}
-  #      ]}
-  #   ]
-  # end
+  defp dispatch do
+    [
+      {:_,
+       [
+         {"/ws", SpaceagentServer.WebsocketHandler, []},
+         {:_, Plug.Cowboy.Handler, {SpaceagentServer.Router, []}}
+       ]}
+    ]
+  end
 end
